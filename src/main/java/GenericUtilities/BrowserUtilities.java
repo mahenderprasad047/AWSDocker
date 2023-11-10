@@ -42,8 +42,8 @@ public class BrowserUtilities
 			cap.setCapability("browserVersion", "119.0");
 			cap.setCapability("platformName", "linux");
 			cap.merge(opt);
-			//driver = new ChromeDriver(opt);
-			driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
+			driver = new ChromeDriver(opt);
+			//driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
 			tl.set(driver);
 		}
 		else if(browserName.equalsIgnoreCase("Edge"))
@@ -52,8 +52,8 @@ public class BrowserUtilities
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("MicrosoftEdge");
 			cap.merge(opt);
-			//driver = new EdgeDriver(opt);
-			driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
+			driver = new EdgeDriver(opt);
+			//driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
 			tl.set(driver);
 
 		}
@@ -63,8 +63,8 @@ public class BrowserUtilities
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("firefox");
 			cap.merge(opt);
-			//driver = new FirefoxDriver(opt);
-			driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
+			driver = new FirefoxDriver(opt);
+			//driver = new RemoteWebDriver(new URL("http://13.53.214.6:4444/wd/hub"),cap);
 			tl.set(driver);
 		}
 		else
